@@ -1,0 +1,35 @@
+/* General Styles for the Download Button */
+.download-button {
+      padding: 12px 20px;
+      background-color: #3182ce;  /* Primary button color */
+      color: white;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 20px;
+      display: inline-block;
+      text-align: center;
+      width: 200px;
+    }
+    
+    .download-button:hover {
+      background-color: #2b6cb0;  /* Darker blue on hover */
+      transform: scale(1.05);  /* Slight grow effect on hover */
+    }
+    
+    .download-button:active {
+      background-color: #2a6fb5;  /* Darker blue when clicked */
+      transform: scale(0.98);  /* Slight shrink effect when clicked */
+    }
+    
+    .download-button:disabled {
+      background-color: #e2e8f0;  /* Light grey for disabled state */
+      cursor: not-allowed;
+    }
+    
+    .download-button:disabled:hover {
+      background-color: #e2e8f0;  /* Disable hover effect on disabled state */
+    }
+    

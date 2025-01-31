@@ -1,0 +1,128 @@
+/* Existing Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 80px;  /* Adds space between navbar and content */
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 40px; /* Adds some space from the top if needed */
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for light mode */
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6a778e;
+  margin-bottom: 15px;
+}
+
+.linkedin-link {
+  font-size: 1rem;
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #2b6cb0;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a202c;
+}
+
+.dark-mode .about-heading,
+.dark-mode .card-name,
+.dark-mode .card-description,
+.dark-mode .linkedin-link {
+  color: #cbd5e0;
+}
+
+.dark-mode .card {
+  background-color: #2d3748;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* White shadow for dark mode */
+}
+
+.dark-mode .card:hover {
+  background-color: #4a5568;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3); /* Enhance white shadow on hover */
+}
+
+.dark-mode .linkedin-link {
+  color: #63b3ed;
+}
+
+.dark-mode .linkedin-link:hover {
+  color: #2b6cb0;
+}
+
+/* Light Mode Shadow */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger dark shadow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+}

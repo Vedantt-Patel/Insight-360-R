@@ -1,0 +1,120 @@
+/* SignUp.css */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger outer shadow */
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.dark-mode .signup-form {
+  background-color: #2d3748;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for contrast */
+}
+.signup-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.signup-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: #f9fafb;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.signup-input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.3);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3182ce;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.signup-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #1a202c;
+}
+
+.dark-mode .signup-form {
+  background-color: #2d3748;
+}
+
+.dark-mode .signup-heading,
+.dark-mode .signup-label,
+.dark-mode .signup-input {
+  color: #cbd5e0;
+}
+
+.dark-mode .signup-input {
+  background-color: #4a5568;
+  border-color: #718096;
+}
+
+.dark-mode .signup-button {
+  background-color: #4a90e2;
+}
+
+.dark-mode .signup-button:hover {
+  background-color: #3182ce;
+}
+
+@media (max-width: 768px) {
+  .signup-form {
+    padding: 30px;
+  }
+
+  .signup-heading {
+    font-size: 20px;
+  }
+}

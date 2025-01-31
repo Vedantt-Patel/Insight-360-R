@@ -1,0 +1,45 @@
+#Slide: 1
+#Header: Addressing the Productivity Paradox in Healthcare with Retrieval Augmented Generative AI Chatbots
+#Content:
+Sajani Ranasinghe, Daswin De Silva, Nishan Mills, Damminda Alahakoon, Milos Manic, Yen Lim, Weranja Ranasinghe
+
+#Slide: 2
+#Header: Abstract
+#Content:
+This research paper explores the role of Artificial Intelligence (AI) in transforming the healthcare sector, with a focus on the limitations of Generative AI that have led to a productivity paradox. The study investigates the potential of Retrieval Augmented Generation (RAG) and Generative AI chatbots in addressing these challenges. A Retrieval Augmented Generative AI Chatbot framework is designed and developed for consultation summaries, diagnostic insights, and emotional assessments of patients. The research demonstrates the technical value of this framework in enhancing service innovation, patient engagement, and workflow efficiencies, thereby contributing to addressing the productivity paradox of AI in healthcare.
+
+#Slide: 3
+#Header: Introduction 
+#Content: Generative Artificial Intelligence (AI) is transforming healthcare by leading a paradigm shift in its application. State-of-the-art models have introduced innovative approaches to healthcare, providing clinical decision support and advanced conversational abilities.
+
+#Slide: 4
+#Header: Introduction 
+#Content: Despite capabilities and performance gains, Generative AI has limitations such as "AI hallucinations", fabricating information, and vague prompts. Recent studies have explored the productivity paradox, where technology investment decreases workplace productivity. The Retrieval Augmented Generative (RAG) approach addresses this by merging retrieval-based and generative models, enhancing accuracy and relevance. This study presents a RAG framework for consultation summaries, diagnostic insights, and emotional assessments, integrating external data repositories and demonstrating technical value in service innovation, patient engagement, and workflow efficiencies.
+#Slide: 5
+#Header: The Retrieval Augmented Generative AI
+#Content: The proposed framework is a chatbot system for healthcare professionals, enabling them to access patient information and analytical insights. It integrates data from various sources, including patient conversations and electronic health records.
+
+#Slide: 6
+#Header: The Retrieval Augmented Generative AI
+#Content: The framework consists of five modules: 
+* Pre-existing data module: integrates structured and unstructured data from various sources
+* Conversation summarisation module: uses LLMs to summarise patient conversations, extracting key aspects such as symptoms and treatment
+* Disease diagnosis module: uses ML models to diagnose diseases, identifying symptom patterns and treatment trajectories
+* Emotion detection module: uses LLMs to detect patient emotions, creating emotion profiles at conversation and patient level
+* Retrieval Augmented Generation (RAG) module: uses vector stores to efficiently store and retrieve information, generating contextually relevant responses to user queries. 
+
+Note: Due to the complexity and length of the content, it is not possible to fit all the details into one slide without losing clarity. However, I have tried to include the most important information in the two slides.
+#Slide: 7
+#Header: Framework Demonstrations
+#Content: This module demonstrates the capabilities of the framework using a sample healthcare dataset, showcasing its ability to provide patient summaries, diagnostic predictions, and emotion detection.
+
+#Slide: 8
+#Header: Framework Demonstrations
+#Content: The framework processes queries through its interaction with the ChatModel and retrieves relevant information, highlighting clinical entities in patient summaries. It also provides diagnostic predictions using machine learning models, such as the XGBoost model with a 93.02% F1 score. Additionally, it detects emotions, including positive and negative emotions, and provides emotion timelines to track a patient's emotional progression. The framework utilizes clinical entities from consultation discussions and EHR data for its predictions, and provides SHAP feature importance values to understand the key drivers of the model's predictions.
+#Slide: 9
+#Header: Conclusion 
+#Content: This study presents a Retrieval Augmented Generative AI Chatbot framework for healthcare, addressing the productivity paradox and improving healthcare services. The framework provides consultation summaries, diagnostic insights, and emotional assessments of patients.
+
+#Slide: 10
+#Header: Conclusion 
+#Content: The RAG AI chatbot improves efficiency, eases technology adoption, and offers scalable solutions. Future work includes integrating multi-modal data and conducting field tests. The study demonstrates the potential of the RAG AI chatbot in resolving the productivity paradox of Generative AI in healthcare, with capabilities in information processing, decision-making, and continuous learning.

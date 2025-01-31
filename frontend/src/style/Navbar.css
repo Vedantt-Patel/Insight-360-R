@@ -1,0 +1,181 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+  background: #eaeef6;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background: #1a202c;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 98%;
+  z-index: 9999;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar.dark {
+  background: #2d3748;
+  box-shadow: 0 4px 12px rgba(222, 222, 222, 0.4);
+}
+
+.navbar.light {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Light background for navbar */
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__item {
+  position: relative;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.navbar__title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 3rem;
+}
+
+.navbar__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem; /* Adjust the width to make the button round */
+  color: #6a778e;
+  text-decoration: none;
+  transition: 250ms ease all;
+  background-color: #fff;
+  border-radius: 50%; /* Make the button round */
+  padding: 1rem;
+}
+
+.navbar__link span {
+  position: absolute;
+  bottom: -2rem;
+  color: #406ff3;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms ease all;
+}
+
+.navbar__link svg {
+  font-size: 2rem;
+  color: #6a778e;
+}
+
+.navbar__link:hover {
+  color: #fff;
+  background-color: #cdd7f4;
+  border-radius: 50%; /* Ensure it stays round */
+}
+
+.navbar__link:hover span {
+  opacity: 1;
+  bottom: -1rem;
+}
+
+.navbar__item:last-child::before {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  left: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%; /* Make the background circle rounded */
+  transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
+}
+
+.navbar__item:hover::before {
+  opacity: 1;
+}
+
+.navbar__theme-toggle {
+  cursor: pointer;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #6a778e;
+  transition: 250ms ease all;
+}
+
+.navbar__theme-toggle:hover {
+  color: #406ff3;
+}
+
+@keyframes gooeyEffect {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.navbar__item:hover::before {
+  opacity: 1;
+  animation: gooeyEffect 250ms ease all;
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__item {
+    margin: 10px 0;
+  }
+
+  .navbar__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+.navbar__title h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for readability */
+}
+
+/* Dark mode text shadow */
+.navbar.dark .navbar__title h1 {
+  color: #e2e8f0;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Slightly stronger white glow */
+}
