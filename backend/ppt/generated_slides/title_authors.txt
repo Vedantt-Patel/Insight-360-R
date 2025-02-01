@@ -1,3 +1,0 @@
-Title: Addressing the Productivity Paradox in Healthcare with Retrieval Augmented Generative AI Chatbots
-Authors: Sajani Ranasinghe, Daswin De Silva, Nishan Mills, Damminda Alahakoon, Milos Manic, Yen Lim, Weranja Ranasinghe
-

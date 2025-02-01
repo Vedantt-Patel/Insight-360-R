@@ -4,7 +4,6 @@ body {
   background-color: #f7fafc;
   margin: 0;
   padding: 0;
-  /* margin-top: 100px; */
 }
 
 /* Home Container */
@@ -17,6 +16,7 @@ body {
   padding: 20px;
   margin-top: 150px;
   transition: background-color 0.3s ease;
+  position: relative;
 }
 
 /* Headings */
@@ -272,4 +272,53 @@ body {
     font-size: 14px;
     padding: 10px;
   }
+}
+/* Image Preview Section */
+.image-preview-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 90vh; /* Make sure the height doesn't exceed the vertical screen size */
+  overflow-y: auto;
+  width: 200px; /* Adjust the width of the container */
+  max-height: 70vh; /* Limit the height of the container */
+  border: 2px solid #3182ce;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.image-scroll-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increase space between the images */
+  padding: 10px;
+}
+
+.image-item {
+  width: 160px; /* Make the image container more rectangular (wider) */
+  height: 120px; /* Taller than wide, giving it a rectangular shape */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Only transition for box-shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3182ce;
+  border-radius: 8px;
+}
+
+.image-item img {
+  width: 100%; /* Make image fill the container width */
+  height: 100%; /* Make image fill the container height */
+  object-fit: cover; /* Ensure the image covers the rectangle without distortion */
+  border-radius: 5px;
+}
+
+/* When an image is selected, change the box-shadow (bigger shadow) */
+.image-item.selected {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Larger, more prominent shadow for selected image */
+}
+
+/* Apply a subtle shadow on hover */
+.image-item:hover {
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
 }

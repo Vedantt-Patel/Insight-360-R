@@ -6,6 +6,7 @@ const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [abstractionText, setAbstractionText] = useState("");  // Add this line
 
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
@@ -13,7 +14,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ isDarkMode, toggleTheme }}>
+    <AppContext.Provider value={{ isDarkMode, toggleTheme, abstractionText, setAbstractionText }}>
       {children}
     </AppContext.Provider>
   );
