@@ -5,9 +5,10 @@ import random
 from pptx.dml.color import RGBColor
 from pptx import Presentation
 from pptx.util import Pt, Inches
-
+import sys
 # load_dotenv()
-
+template_choice = sys.argv[3] 
+print(template_choice)
 def parse_llm_output(llm_response):
     slides = re.split(r'#Slide:\s*\d+', llm_response.strip())  
     slide_numbers = re.findall(r'#Slide:\s*(\d+)', llm_response)  
@@ -64,10 +65,10 @@ def apply_template_styles(placeholder, template_choice, is_title=True):
                     'title_size': (28, 14), 'subtitle_size': (14, 14), 'color': RGBColor(0, 0, 0)},
         'modern': {'title_font': 'Tw Cen MT', 'subtitle_font': 'Segoe UI Light',
                    'title_size': (28, 14), 'subtitle_size': (14, 14), 'color': RGBColor(255, 255, 255)},
-        'dark_modern': {'title_font': 'Calibri Light (Headings)', 'subtitle_font': 'Calibri (Body)',
-                        'title_size': (60, 56), 'subtitle_size': (32, 28), 'color': RGBColor(255, 255, 255)},
+        'dark_modern': {'title_font': 'Britannic Bold', 'subtitle_font': 'Sylfaen',
+                        'title_size': (40, 20), 'subtitle_size': (20, 20), 'color': RGBColor(255, 255, 255)},
         'bright_modern': {'title_font': 'Tw Cen MT', 'subtitle_font': 'Tw Cen MT',
-                          'title_size': (60, 54), 'subtitle_size': (24, 24), 'color': RGBColor(0, 0, 0)},
+                          'title_size': (40, 20), 'subtitle_size': (18, 18), 'color': RGBColor(0, 0, 0)},
         'geometric': {'title_font': 'Tw Cen MT', 'subtitle_font': 'Tw Cen MT',
                       'title_size': (60, 54), 'subtitle_size': (24, 24), 'color': RGBColor(0, 0, 0)},
     }
@@ -112,8 +113,8 @@ def create_ppt(slides_content, template_choice, presentation_title, presenter_na
             'image': {'left': 8, 'top': 1.3, 'width': 4.8, 'height': 5.7}
         },
         'no_image': {
-            'title': {'left': 0.5, 'top': 0.4, 'width': 12, 'height': 1.5},
-            'content': {'left': 0.5, 'top': 1.8, 'width': 12, 'height': 6.8}
+            'title': {'left': 0.5, 'top': 0.3, 'width': 12, 'height': 0.8},
+            'content': {'left': 0.5, 'top': 1.3, 'width': 12, 'height': 5.7}
         }
     }
     
@@ -185,7 +186,7 @@ def delete_first_two_slides(presentation):
             slides = list(xml_slides)
             xml_slides.remove(slides[slide_id])
 
-create_ppt(slides_content, 'modern', title, authors, 'images')
+create_ppt(slides_content, template_choice, title, authors, 'images')
 
 # minimal
 # geometric

@@ -10,6 +10,7 @@ if sys.platform.startswith('win'):
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 
+
 # Get command line argument for abstract inclusion
 include_abstract = sys.argv[1].lower() == 'true' if len(sys.argv) > 1 else False
 

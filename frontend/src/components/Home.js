@@ -14,6 +14,8 @@ const Home = () => {
   const [requiresAbstraction, setRequiresAbstraction] = useState(false);
   const [abstractionText, setAbstractionText1] = useState("");
   const [selectedImage, setSelectedImage] = useState(null); // For selecting the image
+  const [templateNumber, setTemplateNumber] = useState(""); 
+  const [temp, setTemp] = useState(1); 
 
   const { getRootProps, getInputProps } = useDropzone({
     accept: ".pdf",
@@ -31,30 +33,44 @@ const Home = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (pdfFiles.length === 0 || !mode) {
       setStatus("❌ Please select a mode and upload at least one file.");
       return;
     }
-
+  
     setIsLoading(true);
     setStatus("⏳ Processing... Please wait.");
-
+  
     const formData = new FormData();
     pdfFiles.forEach((file) => formData.append("pdfFiles", file));
     formData.append("requiresAbstraction", requiresAbstraction);
     formData.append("abstractionText", abstractionText);
     formData.append("mode", mode);
-
+    if(temp==1){formData.append("templateNumber", "simple");}
+    else if(temp==2){formData.append("templateNumber", "bright_modern");}
+    else if(temp==3){formData.append("templateNumber", "geometric");}  
+    else if(temp==4){formData.append("templateNumber", "futuristic");} 
+    else if(temp==5){formData.append("templateNumber", "dark");}  
+    else if(temp==6){formData.append("templateNumber", "modern");}
+    else if(temp==7){formData.append("templateNumber", "minimal");}
+    else if( temp==8){formData.append("templateNumber", "dark_modern");}
+    
+    // Logging form data to verify its contents before sending
+    console.log("🔹 Form Data to be sent:",formData);
+    formData.forEach((value, key) => {
+      console.log(`${key}: ${value}`);
+    });
+  
     try {
       const response = await fetch("http://localhost:5000/upload", {
         method: "POST",
         body: formData,
       });
-
+  
       const data = await response.json();
       console.log("🔹 Upload Response:", data);
-
+  
       if (response.ok) {
         setDownloadLink("http://localhost:5000/download_pptx");
         setStatus("✅ Processing Complete! Click below to download.");
@@ -65,9 +81,10 @@ const Home = () => {
       console.error("❌ Error uploading files:", error);
       setStatus("❌ Failed to upload files.");
     }
-
+  
     setIsLoading(false);
   };
+  
 
   return (
     <div className={`home-container ${isDarkMode ? "dark-mode" : ""}`}>
@@ -155,7 +172,7 @@ const Home = () => {
               <div
                 key={index}
                 className={`image-item ${selectedImage === index ? "selected" : ""}`}
-                onClick={() => setSelectedImage(index)}
+                onClick={() => (setTemp(index+1))}
               >
                 <img src={`/images/img${index + 1}.png`} alt={`Image ${index + 1}`} />
               </div>

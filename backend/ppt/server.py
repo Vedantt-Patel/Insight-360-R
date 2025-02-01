@@ -41,6 +41,7 @@ def upload_file():
     requires_abstraction = request.form.get('requiresAbstraction') == 'true'
     abstraction_text = request.form.get('abstractionText', "")
     mode = request.form.get('mode', "")
+    templateNumber = request.form.get('templateNumber', "dark")
 
     if len(files) == 0:
         print("❌ **No PDF files selected!**")
@@ -91,7 +92,7 @@ def upload_file():
                 # Run template-based.py
                 print("🔄 **Creating PowerPoint presentation...**")
                 result_template = subprocess.run(
-                    [python_path, 'template-based.py', 'generated_slides/final_presentation_slides.txt', 'generated_slides/output_presentation_final.pptx'],
+                    [python_path, 'template-based.py', 'generated_slides/final_presentation_slides.txt', 'generated_slides/output_presentation_final.pptx',str(templateNumber)],
                     capture_output=True,
                     text=True,
                     encoding='utf-8',
