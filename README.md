@@ -1,57 +1,49 @@
-# JustLearn - AI-Powered Research Content Generation
+# Insight-360-R: Unleash the Power of Research - Instantly Transform Papers into Engaging Content
 
-JustLearn is an AI-powered platform that empowers users to effortlessly transform research papers into various formats, including PowerPoint presentations (PPTs), podcasts, and flowcharts.  It leverages advanced AI models to streamline content creation for academic, professional, and even casual use.  JustLearn aims to simplify the process of digesting and sharing research findings, saving users valuable time and effort.
+Tired of wrestling with research papers? Insight-360-R is your AI-powered solution to effortlessly transform complex research into compelling PowerPoint presentations, captivating podcasts, and insightful flowcharts.  Whether you're an academic, professional, or simply curious, Insight-360-R saves you time and unlocks the knowledge hidden within research.
 
-## Features
+## Key Features - What Insight-360-R Can Do For You
 
-JustLearn offers three core functionalities:
+* **PPT Generation:**  Instantly create polished, structured PowerPoint presentations from any research paper.  Say goodbye to tedious slide creation!
+* **Podcast Creation:** Turn research into engaging, human-like audio podcasts.  Listen and learn on the go!
+* **Flowchart Generation:** Visualize complex research concepts with clear and concise flowcharts.  Gain a deeper understanding at a glance.
 
-* **PPT Generation:** Automatically generates structured PowerPoint presentations from research papers, breaking down complex information into easily digestible slides.
-* **Podcast Creation:** Converts research content into engaging, human-like audio podcasts, making research accessible on the go.
-* **Flowchart Generation:** Visualizes key research concepts and relationships within a research paper in structured flowcharts, providing a clear overview of the research's core arguments.
+## How Insight-360-R Works - Powered by Cutting-Edge AI
 
-## Technology Stack
+Insight-360-R leverages a powerful combination of AI models and technologies:
 
-JustLearn utilizes a combination of cutting-edge technologies to deliver its features:
+### PPT Generation - Create Stunning Presentations in Seconds
 
-### PPT Generation
+1. **LLaMA-Powered Summarization:** LLaMA models intelligently summarize your research paper, dividing it into logical submodules and subsections for a well-organized presentation structure.
+2. **Mistral-Driven Content Creation:** The Mistral model generates compelling slide content, covering essential sections like Introduction, Abstract, Methodology, Results, and Conclusion.
+3. **Personalized for You:** Customize your PPTs with:
+    * **Style Choice:**  "Fun" or "Professional" styles to match your audience.
+    * **Abstract Inclusion:**  Include or exclude the abstract as needed.
+    * **Template Selection:** Choose from a variety of visually appealing templates.
+    * **Domain-Specific Images:**  Relevant images are automatically integrated, and you can even paste your own!
 
-1. **LLaMA Models:**  LLaMA models are employed to summarize the research paper, intelligently dividing it into submodules and subsections for a well-organized presentation structure. This ensures that the generated PPT flows logically and covers all essential points.
+### Flowchart Generation - Visualize Research with Ease
 
-2. **Mistral Model:** The Mistral model generates the slide content, including key sections like Introduction, Abstract, Methodology, Results, and Conclusion.  This ensures that each slide contains relevant and informative text.
+Insight-360-R uses Mermaid.js and Draw.io to generate insightful flowcharts that map the relationships between key concepts and findings.
 
-3. **User Customization:** JustLearn offers several customization options to tailor the PPT generation to user needs:
-    * **Style Choice:** Users can choose between "Fun" or "Professional" PPT generation styles, allowing for different tones and visual aesthetics.
-    * **Abstract Inclusion:** Users can choose to include or exclude the Abstract section in the generated PPT.
-    * **Template Selection:**  A variety of PPT templates are available, allowing users to select a visually appealing design that suits their preferences.
-    * **Domain-Specific Images:**  Relevant, domain-specific images are automatically integrated into the slides to enhance visual engagement and understanding.  Users can also paste images directly into the PPT generation process (see below).
+### Podcast Generation - Research on the Go
 
-### Flowchart Generation
+ElevenLabs powers the creation of multilingual, human-like audio podcasts from your research.  Choose between long-form or short-form formats.
 
-JustLearn uses Mermaid.js and Draw.io to create structured flowcharts based on the research paper's content.  These tools allow for the visualization of relationships between concepts, processes, and findings.
+## Image Pasting for PPT Generation - Your Visuals, Your Way
 
-### Podcast Generation
+Enhance your generated PPTs by directly pasting images into the process.  Include specific figures, charts, or illustrations from your research to provide context and visual appeal.  Simply copy and paste or drag and drop image files into the designated area.
 
-JustLearn utilizes ElevenLabs to generate multilingual, human-like audio podcasts from research papers.  This feature supports both long-form and short-form podcasts, providing flexibility for different listening preferences.
+## Quick Start - Transform Your Research in 5 Easy Steps
 
-## Usage
-
-1. **Upload:** Upload your research paper in PDF or a compatible format.
-2. **Select Format:** Choose your desired output format: PPT, Podcast, or Flowchart.
-3. **Customize (PPT only):** If generating a PPT, customize the settings, including style, abstract inclusion, and template.  If you want to include your own images, paste them into the designated area.
+1. **Upload:** Upload your research paper (PDF or compatible format).
+2. **Select Format:** Choose PPT, Podcast, or Flowchart.
+3. **Customize (PPT):**  Tailor your PPT (style, abstract, template, images).
 4. **Generate:** Click the "Generate" button.
-5. **Download:** Download your generated content in the appropriate format (PPTX, MP3, or a diagram format).
+5. **Download:** Download your content (PPTX, MP3, diagram).
 
-## Future Enhancements
+## Snapshots - See Insight-360-R in Action!
 
-* **NotebookLM Integration:** Integration with NotebookLM is planned for improved research analysis and deeper understanding of the source material.
-* **Enhanced AI Models:**  Future development will explore additional AI models for even better text summarization, speech synthesis, and flowchart generation.
-* **Expanded Customization:**  Support for more template designs, voice styles, and customization options will be added.
-* **Multiple File Upload:** The ability to upload multiple files simultaneously for generating combined content.
-* **Direct Sharing:**  Integration with social media platforms and other tools for easy sharing of generated content.
-* **Image Editing Tools:** Basic image editing tools (e.g., cropping, resizing) within the image pasting interface.
-
-## Snapshots
 ![WhatsApp Image 2025-02-01 at 11 30 00_e6ca2344](https://github.com/user-attachments/assets/a491b583-522e-449e-a0f8-b41afb249b8e)
 ![WhatsApp Image 2025-02-01 at 11 30 00_7381fea6](https://github.com/user-attachments/assets/da8dbe54-2043-477e-9576-c6dcadb29094)
 ![WhatsApp Image 2025-02-01 at 11 30 00_1af7fef3](https://github.com/user-attachments/assets/ba5dd3d7-87e5-45d1-b1d0-1c3806bbe3f9)
@@ -61,7 +53,15 @@ JustLearn utilizes ElevenLabs to generate multilingual, human-like audio podcast
 ![WhatsApp Image 2025-02-01 at 11 30 02_4dc32b9b](https://github.com/user-attachments/assets/d515de6d-049c-4f82-90dd-77b6e9c926bb)
 
 
+## Future Enhancements - The Journey Continues
 
-## Contact
+* **NotebookLM Integration:** Deeper research analysis.
+* **Advanced AI Models:** Enhanced summarization, speech synthesis, and flowchart generation.
+* **Expanded Customization:** More templates, voice styles, and options.
+* **Multiple File Upload:** Combine content from multiple research papers.
+* **Direct Sharing:** Seamless integration with social media.
+* **Image Editing Tools:** Basic image editing within the platform.
 
-For any inquiries or contributions, feel free to reach out!  (Add your email address or other contact information here.)
+## Contact Us - Let's Connect!
+
+Have questions or suggestions?  We'd love to hear from you! (Add your email or other contact information here.)
