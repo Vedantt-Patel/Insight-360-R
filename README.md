@@ -56,19 +56,25 @@ Tired of wrestling with research papers? **Insight-360-R** is your **AI-powered 
 
 ## 📸 Snapshots - See Insight-360-R in Action!
 
-![Demo Image 1](https://github.com/user-attachments/assets/a491b583-522e-449e-a0f8-b41afb249b8e)
+📌 **Register for an Account**  
+![Demo Image 5](https://github.com/user-attachments/assets/cb169de1-e635-473e-a7a3-f54594b5da67)  
+  
+📌 **Login to Your Account**  
+![Demo Image 6](https://github.com/user-attachments/assets/818cbb18-14df-46a8-8d1e-7f4bf18ba765) 
+ 
+📌 **Home Page (Light Mode)**  
+![Demo Image 7](https://github.com/user-attachments/assets/d515de6d-049c-4f82-90dd-77b6e9c926bb)  
+ 
+📌 **Home Page (Dark Mode)**  
+![Demo Image 3](https://github.com/user-attachments/assets/ba5dd3d7-87e5-45d1-b1d0-1c3806bbe3f9) 
+ 
+📌 **Selecting a PDF to Process**  
+![Demo Image 2](https://github.com/user-attachments/assets/da8dbe54-2043-477e-9576-c6dcadb29094) 
 
-![Demo Image 2](https://github.com/user-attachments/assets/da8dbe54-2043-477e-9576-c6dcadb29094)
-
-![Demo Image 3](https://github.com/user-attachments/assets/ba5dd3d7-87e5-45d1-b1d0-1c3806bbe3f9)
-
-![Demo Image 4](https://github.com/user-attachments/assets/c4d644e9-ab14-4df9-bc5b-00848f78a3a1)
-
-![Demo Image 5](https://github.com/user-attachments/assets/cb169de1-e635-473e-a7a3-f54594b5da67)
-
-![Demo Image 6](https://github.com/user-attachments/assets/818cbb18-14df-46a8-8d1e-7f4bf18ba765)
-
-![Demo Image 7](https://github.com/user-attachments/assets/d515de6d-049c-4f82-90dd-77b6e9c926bb)
+📌 **PDF Uploaded & Processing in Backend**  
+![Demo Image 1](https://github.com/user-attachments/assets/a491b583-522e-449e-a0f8-b41afb249b8e) 
+  
+![Demo Image 4](https://github.com/user-attachments/assets/c4d644e9-ab14-4df9-bc5b-00848f78a3a1) 
 
 ---
 
