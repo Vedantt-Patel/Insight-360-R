@@ -94,7 +94,7 @@ Tired of wrestling with research papers? **Insight-360-R** is your **AI-powered 
 📧 **Email us**:
 - Mihir Mungara: mihirmungara5967@gmail.com
 - Ronit Patel: ronitpatel505@gmail.com
-- Vedant: vedxnt2912@gmail.com
+- Vedant Patel: vedxnt2912@gmail.com
 - Meet Aghara: meet.aghara522@gmail.com
 - Meet Khanpara: meetkhanpara094@gmail.com
 
