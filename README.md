@@ -88,13 +88,49 @@ Tired of wrestling with research papers? **Insight-360-R** is your **AI-powered 
 
 ---
 
+## 🛠 **Setup Instructions** - How to Clone and Start the Project
+
+Follow these steps to clone the repository and get the project running on your local machine:
+
+### 1. Clone the Repository
+
+To get started with Insight-360-R, first, clone the repository using Git:
+
+```bash
+git clone https://github.com/your-username/insight-360-r.git
+```
+
+### 2. Navigate to Project Folder
+
+```bash
+cd insight-360-r
+```
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Set Up Environment Variables
+Create a (.env) file in the root directory and add the necessary environment variables (such as API keys and secret tokens) as per your project setup. Example:
+```bash
+GROQ_API_KEY=your-groq-playground-api-key
+HF_TOKEN=your-hugging-face-key
+```
+
+### 5. Start the Development Server
+```bash
+npm start
+```
+
+### 6. Build for Production
+```bash
+npm run build
+```
+
 ## 📩 **Contact Us** - Let's Connect!
 
-📧 **Email us**:  
-- Mihir Mungara: mihirmungara5967@gmail.com  
-- Ronit Patel: ronitpatel505@gmail.com  
-- Vedant Patel: vedxnt2912@gmail.com  
-- Meet Aghara: meet.aghara522@gmail.com  
-- Meet Khanpara: meetkhanpara094@gmail.com  
+📧 **Email us**: 
+- Vedant Patel: vedxnt2912@gmail.com 
 
 🌟 _Insight-360-R: Transforming research into engaging content, effortlessly!_ 🚀
