@@ -128,9 +128,8 @@ npm start
 npm run build
 ```
 
-## 📩 **Contact Us** - Let's Connect!
+## 📩 Let's Connect!
 
-📧 **Email us**: 
-- Vedant Patel: vedxnt2912@gmail.com 
+📧 **Email **: vedxnt2912@gmail.com 
 
 🌟 _Insight-360-R: Transforming research into engaging content, effortlessly!_ 🚀
