@@ -75,6 +75,14 @@ Tired of wrestling with research papers? **Insight-360-R** is your **AI-powered 
 ![Demo Image 1](https://github.com/user-attachments/assets/a491b583-522e-449e-a0f8-b41afb249b8e)  
 ![Demo Image 4](https://github.com/user-attachments/assets/c4d644e9-ab14-4df9-bc5b-00848f78a3a1)  
 
+📌 **Sample Output Templates**  
+![image](https://github.com/user-attachments/assets/85a7677a-2000-47a7-af19-ff747841705a)
+![image](https://github.com/user-attachments/assets/90cd7361-b3ee-4675-af2c-d29f3b796744)
+![image](https://github.com/user-attachments/assets/14131bd6-ce45-483d-bbed-b56977afef66)
+![image](https://github.com/user-attachments/assets/34681358-3cbf-4d93-99f9-535aa7fbca82)
+
+
+
 ---
 
 ## 🚀 **Future Enhancements** - The Journey Continues
@@ -130,6 +138,6 @@ npm run build
 
 ## 📩 Let's Connect!
 
-📧 **Email **: vedxnt2912@gmail.com 
+📧 **Email** : vedxnt2912@gmail.com 
 
 🌟 _Insight-360-R: Transforming research into engaging content, effortlessly!_ 🚀
